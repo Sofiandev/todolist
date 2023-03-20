@@ -1,0 +1,80 @@
+$color1 : rgb(247, 242, 242);
+*{
+    box-sizing: border-box;
+    color : $color1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: circle;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+   
+    .container{
+        margin: 50px;
+        width: 50%;
+        text-align: center;
+        border : 1px solid rgb(174, 169, 23);
+        border-radius: 20px;
+        background : rgba(255, 255, 255, 0.475);
+        padding: 20px;
+        
+        h2{
+            margin: 30px;
+
+        
+        }
+
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        input{
+        border-radius: 6px;
+        width : 50%;
+        background: none;
+        color: $color1;
+        text-align: center;
+        border: 1px solid;
+        margin-top: 20px;
+        height : 35px;
+        
+        &::placeholder{
+            color :rgb(174, 169, 23);
+        }
+        
+        &:focus{
+                background :linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+                outline:none;
+                border:rgb(174, 169, 23);
+
+                &::placeholder{
+                    color :rgb(248, 245, 245)
+                }
+
+            
+
+            }
+        }
+        span{
+        color:red;
+        font-size: 0.7rem;
+        visibility: hidden;
+        }
+}
+
+li.checked{
+
+    &::before{
+        content : "✔️";
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
+}
+
+}

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  color: rgb(247, 242, 242);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: circle;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+body .container {
+  margin: 50px;
+  width: 50%;
+  text-align: center;
+  border: 1px solid rgb(174, 169, 23);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.475);
+  padding: 20px;
+}
+body .container h2 {
+  margin: 30px;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body form input {
+  border-radius: 6px;
+  width: 50%;
+  background: none;
+  color: rgb(247, 242, 242);
+  text-align: center;
+  border: 1px solid;
+  margin-top: 20px;
+  height: 35px;
+}
+body form input::-moz-placeholder {
+  color: rgb(174, 169, 23);
+}
+body form input::placeholder {
+  color: rgb(174, 169, 23);
+}
+body form input:focus {
+  background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  outline: none;
+  border: rgb(174, 169, 23);
+}
+body form input:focus::-moz-placeholder {
+  color: rgb(248, 245, 245);
+}
+body form input:focus::placeholder {
+  color: rgb(248, 245, 245);
+}
+body form span {
+  color: red;
+  font-size: 0.7rem;
+  visibility: hidden;
+}
+body li.checked::before {
+  content: "✔️";
+  padding: 10px;
+  font-size: 1.1rem;
+}/*# sourceMappingURL=style.css.map */
