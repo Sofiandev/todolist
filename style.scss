@@ -66,15 +66,19 @@ body{
         visibility: hidden;
         }
 }
+    .todolist{
+        li.checked{
+    background: red;
+        }
 
-li.checked{
+    }
 
+
+}
+.checked{
     &::before{
         content : "✔️";
         padding: 10px;
         font-size: 1.1rem;
     }
-
-}
-
 }
