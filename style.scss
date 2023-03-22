@@ -6,6 +6,10 @@ $color1 : rgb(247, 242, 242);
     list-style: circle;
 
 }
+
+.checked{
+    background: red;
+}
 body{
     display: flex;
     align-items: center;
@@ -67,7 +71,8 @@ body{
         }
 }
     .todolist{
-        li.checked{
+        li{
+            .checked{
     background: red;
         }
 
