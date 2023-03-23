@@ -66,11 +66,10 @@ body form span {
   font-size: 0.7rem;
   visibility: hidden;
 }
-body .todolist lichecked {
+body .todolist li .checked {
   background: red;
 }
-
-.checked::before {
+body .todolist li .checked::before {
   content: "✔️";
   padding: 10px;
   font-size: 1.1rem;

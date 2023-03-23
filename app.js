@@ -12,7 +12,7 @@ const todo = document.querySelector("#todo");
 const todolist = document.querySelector(".todolist");
 const form = document.querySelector("form");
 const error = document.querySelector("span");
-const removetodo = document.querySelector("ul");
+const list = document.querySelector("ul");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -25,9 +25,9 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-
-removetodo.addEventListener('click',(e)=>{
-    e.target.classList.add ="checked";
-    // e.target.remove();
-console.log(e.target)
-})
+list.addEventListener("click", (e) => {
+  if( e.target.classList = "checked"){
+  e.target.classList.toggle("checked")};
+  // e.target.remove();
+  console.log(e.target);
+});

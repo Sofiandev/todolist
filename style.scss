@@ -73,17 +73,17 @@ body{
     .todolist{
         li{
             .checked{
-    background: red;
+                background: red;
+                &::before{
+                content : "✔️";
+                padding: 10px;
+                font-size: 1.1rem;
+                }
+            }
+
         }
 
+
     }
 
-
-}
-.checked{
-    &::before{
-        content : "✔️";
-        padding: 10px;
-        font-size: 1.1rem;
-    }
 }
